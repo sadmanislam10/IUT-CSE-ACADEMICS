@@ -1,0 +1,55 @@
+I completely understand. The professor rarely asks a question about just *one* topic; they love to blend Structs, Functions, Arrays, and Strings into a single problem. Since you want to practice *that* specific style tonight, but scale it from basic to advanced, I have designed these "Combo Problems."
+
+These are directly inspired by the logic in your 2021-2023 PDFs, but stripped of the confusing exam wording so you can just focus on building the code.
+
+Here are 4 Combo Problems to tackle tonight:
+
+### Combo 1: Arrays + Strings + Functions (The Validator)
+*Inspired by the 2022-2023 SMS parser and 2021-2022 Password validator.*
+
+**The Setup:** You need to validate university IDs. A valid ID is exactly 9 characters long and must start with the characters `"23"`.
+**The Task:**
+1. Write a function `int isValidID(char id[])`. It should return `1` if the string length is exactly 9 AND the first two characters are '2' and '3'. Otherwise, return `0`.
+2. In `main`, declare an array of strings (a 2D `char` array) to hold 3 different IDs.
+3. Use a loop to take input for these 3 IDs.
+4. Pass each ID to your function. If it returns 1, print "[ID] is Valid". If 0, print "[ID] is Invalid".
+
+### Combo 2: Structs + Array of Structs + Functions (The Manager)
+*Inspired by the 2021-2022 FIFA problem and 2023-2024 Nested Struct problem.*
+
+**The Setup:** You need to manage a mini-tournament.
+**The Task:**
+1. Define a `struct Team` containing a `char name[50]`, `int matchesPlayed`, and `int points`.
+2. Write a function `void printTopTeam(struct Team t[], int size)`. Inside this function, use a loop to find the team with the highest `points` and print their name.
+3. In `main`, declare an array of 3 `Team` structs.
+4. Use a `for` loop to ask the user to input the name, matches played, and points for all 3 teams.
+5. Call your `printTopTeam` function, passing the array to it.
+
+### Combo 3: 2D Arrays + Nested Loops + Functions (The Grid Logic)
+*Inspired by the 2022-2023 Seat Distance and 2023-2024 Magic Square problems.*
+
+**The Setup:** You are given a seating grid where `1` means an occupied seat and `0` means an empty seat.
+**The Task:**
+1. Write a function `void countEmptySeats(int grid[3][3])`. 
+2. Inside the function, use nested loops to traverse the 2D array. Count how many `0`s there are, and print: "There are X empty seats available."
+3. In `main`, declare a $3 \times 3$ integer array and hardcode the values (e.g., mix some 1s and 0s). 
+4. Call your function. 
+5. *(Advanced step)*: Modify the function so that it also prints the exact `(row, col)` index of every empty seat it finds.
+
+### Combo 4: Structs + File I/O + Logic (The Data Filter)
+*Inspired by the 2023-2024 CSV filtering question.*
+
+**The Setup:** You need to read data, filter it, and write it to a file. 
+**The Task:**
+1. Define a `struct Student` with `int id` and `float cgpa`.
+2. In `main`, declare an array of 3 `Student` structs and take input from the user to fill them.
+3. Open a file named `scholarship.txt` in write mode (`"w"`).
+4. Use a loop to iterate through your array of structs. If a student's `cgpa` is **greater than or equal to 3.75**, write their ID and CGPA into the text file using `fprintf`.
+5. Close the file. (If you do this correctly, you can open the `.txt` file on your computer and only see the smart students listed!)
+
+---
+
+**How to approach this tonight:**
+Start with Combo 1 and work your way down. These will force you to practice struct syntax, function parameters (especially passing arrays to functions), and file pointers all at the same time. 
+
+If you get stuck on how to pass an array of structs to a function (Combo 2), or how to format the `fprintf` (Combo 4), let me know and I will give you the exact lines of code!
