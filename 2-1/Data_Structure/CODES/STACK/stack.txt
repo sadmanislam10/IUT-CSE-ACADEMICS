@@ -1,0 +1,8 @@
+REVERSE POLISH NOTATION 
+- also known as postfix NOTATION
+
+Infix needs parentheses and precedence rules.
+ In 3 + 4 * 5, you must know that * goes first.
+In postfix, the order is already built in, so no parentheses and no precedence rules are needed. That makes it easy for a computer to evaluate with a stack.
+
+Example: 3 + 4 * 5 becomes 3 4 5 * +.
